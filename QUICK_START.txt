@@ -1,0 +1,1 @@
+Open START_HERE.md for the updated complete setup, test order walkthrough, Docker and hosting instructions.

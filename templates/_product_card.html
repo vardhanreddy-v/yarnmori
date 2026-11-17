@@ -1,0 +1,8 @@
+<article class="product-card" data-category="{{ product.category }}" data-product-name="{{ product.name|lower }}">
+  <a href="/product/{{ product.slug }}" class="product-image-wrap" aria-label="View {{ product.name }}">
+    <img src="{{ product.image }}" alt="Handmade {{ product.name }} by Yarnmori" loading="lazy">
+    {% if product.badge %}<span class="product-badge">{{ product.badge }}</span>{% endif %}
+  </a>
+  <div class="product-meta"><div><span class="product-category">{{ product.category }}</span><a class="product-name" href="/product/{{ product.slug }}">{{ product.name }}</a></div><span class="product-price">₹{{ product.price }}</span></div>
+  <button type="button" class="add-button" data-add="{{ product.id }}" data-name="{{ product.name }}" data-price="{{ product.price }}" data-image="{{ product.image }}">Add to bag <span>＋</span></button>
+</article>
